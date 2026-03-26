@@ -9,8 +9,7 @@
 
 double *generateRandomArray(int numberOfElements);
 
-double *ordenamientoBurbuja(int numberOfElements);
-
+double *ordenamientoBurbuja(double *A,int numberOfElements);
 
 int main(int argc, char *argv[]){
    double *A;
@@ -34,7 +33,7 @@ double *generateRandomArray(int numberOfElements){
 }
 
 
-double *ordenamientoBurbuja(int numberOfElements){
+double *ordenamientoBurbuja(double *A,int numberOfElements){
 	double *sortedVector;
 	srand(time(NULL));
    	sortedVector=malloc(numberOfElements*sizeof(double));
